@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>你好，世界！</h1>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownddMenu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div>
+    <form role="form">
+        <div class="form-group">
+            <label for="name">名称</label>
+            <input type="text" class="form-control" id="name" placeholder="请输入名称">
+        </div>
+    </form>
+    <ul class="nav navbar-nav">
+        <li class="dropdown active">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" aria-expanded="false">
+                <i class="fa fa-cogs"></i>&nbsp; 安全<b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a tabindex="-1" href="/users/list/">
+                        <i class="fa fa-fw fa-user"></i>&nbsp;用户列表
+                    </a>
+                </li>
+                <li>
+                    <a tabindex="-1" href="/roles/list/">
+                        <i class="fa fa-fw fa-group"></i>&nbsp;角色列表
+                    </a>
+                </li>
+                <li>
+                    <a tabindex="-1" href="/userstatschartview/chart/">
+                        <i class="fa fa-fw fa-bar-chart-o"></i>&nbsp; 用户统计
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a tabindex="-1" href="/permissions/list/">
+                        <i class="fa fa-fw fa-lock"></i>&nbsp;基本权限
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a tabindex="-1" href="/home/">
+                <i class="fa fa-fw fa-list-ol"></i>&nbsp;首页
+            </a>
+        </li>
+    </ul>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
